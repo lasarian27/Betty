@@ -1,0 +1,45 @@
+{
+  "name": "betty-frontend",
+  "version": "1.0.0",
+  "description": "My incredible Nuxt.js project",
+  "author": "Lasarian",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/router": "^1.4.0",
+    "@nuxtjs/toast": "^3.2.1",
+    "@nuxtjs/font-awesome": "^1.0.4",
+    "@nuxtjs/moment": "^1.2.0",
+    "bootstrap": "^4.3.1",
+    "element-ui": "^2.11.1",
+    "dotenv": "^8.2.0",
+    "lodash-es": "^4.17.15",
+    "nuxt": "^2.0.0",
+    "vue": "latest",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^6.1.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "patch-package": "^6.1.2",
+    "sass": "^1.25.1-test.1",
+    "sass-loader": "^7.3.1"
+  }
+}
