@@ -1,7 +1,5 @@
 <template>
   <div :class="[ `wrapper-page-${routeName}` ]" class="be-wrapper">
-    <app-navbar />
-
     <app-content />
 
     <app-footer />
@@ -9,13 +7,11 @@
 </template>
 
 <script>
-import AppNavbar from '~/components/layout/Navbar'
 import AppContent from '~/components/layout/Content'
 import AppFooter from '~/components/layout/Footer'
 
 export default {
   components: {
-    AppNavbar,
     AppContent,
     AppFooter
   },
@@ -89,5 +85,9 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.be-wrapper {
+  margin: 20px;
 }
 </style>

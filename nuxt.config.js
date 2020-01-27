@@ -16,7 +16,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,600,700' },
       { rel: 'stylesheet', href: 'https://www.superbet.ro/static/css/app.27f1eca1b4e8caf2d5a49c42bed6c4f1.css' },
-      { rel: 'stylesheet', href: 'https://dev.score-alarm.eu/sdk/axilis/static/css/sa-statistics-sdk-styles.css' }
+      { rel: 'stylesheet', href: 'https://dev.score-alarm.eu/sdk/axilis/static/css/sa-statistics-sdk-styles.css' },
+      { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' }
     ]
   },
 

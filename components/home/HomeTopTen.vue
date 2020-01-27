@@ -2,14 +2,12 @@
   <div class="items">
     <div class="group-header__wrapper">
       <div class="group-header">
-        <div class="group-header__details">
-          <span title="Top 10" class="group-header__details-title">
-            Top 10
-          </span>
-        </div>
+        <button @click="getTopGames" class="pick actionable betty-button">
+          Top 10
+        </button>
       </div>
 
-      <div v-for="game in games">
+      <div v-for="game in topTen">
         <div class="details-header">
           <div class="details-header__event-collection">
             <span class="details-header__event-collection-wrapper">
@@ -79,14 +77,21 @@
 
 <script>
 export default {
-  props: {
-    games: {
-      type: Array,
-      default: () => []
+  data () {
+    return {
+      topTen: []
     }
   },
 
   methods: {
+    getTopGames () {
+      this.$axios.get('https://offer.superbet.ro/offer/getTopTenOffer?compression=true&langId=2&controller=offer&method=getTopTenOffer')
+        .then(({ data }) => {
+          this.topTen = data.data
+          console.log(data)
+        })
+    },
+
     findOdd (odds, type) {
       const found = odds.find(odd => odd.oc === type)
       return found ? found.ov : null
@@ -97,8 +102,6 @@ export default {
 
 <style lang="scss" scoped>
 .items {
-  margin-top: 50px;
-  max-width: 270px;
   text-align: center;
 
   .details-header {
@@ -121,8 +124,24 @@ export default {
     top: 0;
   }
 
+  .group-header {
+    padding: 8px 12px;
+    height: auto;
+  }
+
+  .group-header__wrapper {
+    padding: 5px;
+  }
+
   .event-row___markets {
     justify-content: center;
+  }
+
+  .betty-button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
   }
 }
 </style>

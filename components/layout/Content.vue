@@ -13,7 +13,7 @@
       </nav>
     </div>
 
-    <div class="main-content" style="margin: 25px">
+    <div class="main-content">
       <nuxt />
     </div>
 
