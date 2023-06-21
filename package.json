@@ -21,7 +21,7 @@
     "element-ui": "^2.11.1",
     "dotenv": "^8.2.0",
     "lodash-es": "^4.17.15",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "vue": "latest",
     "vue-infinite-scroll": "^2.0.2",
     "vue-router": "^3.1.5"
